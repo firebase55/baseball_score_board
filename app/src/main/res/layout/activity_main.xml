@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#333"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Baseball ScoreBoard"
+            android:gravity="center"
+            android:textColor="#FDFBFB"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textSize="22dp"
+            android:layout_marginTop="50sp"
+            android:layout_height="55dp" />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/basee"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_above="@+id/alllayout"
+        android:background="#FFF"
+        android:layout_height="0.2dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:id="@+id/alllayout"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:id="@+id/acyiviy_id"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:textSize="20sp"
+                android:text="Team A"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#F1EFEF"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/teamA_score_id"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="20sp"
+                android:textColor="#fff"
+                android:textSize="50dp"
+                android:text="0"
+                android:fontFamily="cursive"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10dp"
+                android:onClick="threeA"
+                android:textSize="20sp"
+                android:text="+ 3"
+                android:background="@drawable/colordesign"
+                android:layout_height="wrap_content">
+
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/colordesign"
+                android:onClick="twoA"
+                android:textSize="20sp"
+                android:text="+ 2"
+                android:layout_height="wrap_content">
+
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:text="+ 1"
+                android:onClick="oneA"
+                android:background="@drawable/colordesign"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text="Adjust A"
+                android:onClick="adjustA"
+                android:background="@drawable/colordesign"
+                android:layout_height="wrap_content">
+
+
+            </Button>
+        </LinearLayout>
+        <TextView
+            android:layout_width="1dp"
+            android:background="#FFF"
+            android:layout_marginTop="1dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:id="@+id/acyiviy_id1"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:textSize="20sp"
+                android:text="Team B"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#F1EFEF"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/teamA_score_id11"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="20sp"
+                android:textColor="#fff"
+                android:textSize="50dp"
+                android:text="0"
+                android:fontFamily="cursive"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:text="+ 3"
+                android:onClick="threeB"
+                android:background="@drawable/colordesign"
+                android:layout_height="wrap_content">
+
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/colordesign"
+                android:onClick="twoB"
+                android:textSize="20sp"
+                android:text="+ 2"
+                android:layout_height="wrap_content">
+
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:text="+ 1"
+                android:onClick="oneB"
+                android:background="@drawable/colordesign"
+                android:layout_height="wrap_content">
+
+            </Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text="Adjust B"
+                android:onClick="AdjustB"
+                android:background="@drawable/colordesign"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_marginRight="40dp"
+    android:background="@drawable/resetgesign"
+    android:text="Reset"
+    android:textColor="#000"
+    android:textSize="17dp"
+    android:onClick="seto"
+    android:layout_below="@+id/alllayout"
+    android:textStyle="bold"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="20sp"
+    android:layout_height="45dp" />
+
+</RelativeLayout>
